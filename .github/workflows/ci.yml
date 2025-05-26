@@ -31,7 +31,7 @@ jobs:
       - name: Register Poetry bin
         run: echo "${HOME}/.poetry/bin" >> $GITHUB_PATH
 
-      - name: Chache dependencies
+      - name: Cache dependencies
         id: cache-venv
         uses: actions/cache@v2
         with:
@@ -39,7 +39,7 @@ jobs:
           path: /home/runner/.cache/pypoetry/virtualenvs/
 
       - name: Install dependencies
-        if: steps.cache-venv.outputs.cahe-hit != 'true'
+        if: steps.cache-venv.outputs.cache-hit != 'true'
         run: poetry install --no-root
 
       - name: Run Black
