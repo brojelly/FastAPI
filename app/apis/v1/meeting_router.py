@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from starlette.responses import Response
+
 from app.dtos.create_meeting_response import CreateMeetingResponse
 
 router = APIRouter(prefix="/v1/meetings", tags=["Meeting"])
