@@ -3,7 +3,7 @@ name = "when2-meet"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "brojelly",email = "lhm4802@nate.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
